@@ -1,0 +1,29 @@
+.banner {
+    background-color: var(--overlay-scondary);
+    text-align: center;
+    padding: 1rem 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.banner__container {
+    margin-inline: auto;
+    max-width: 1350px;
+}
+
+.banner__title {
+    font-size: 1.5rem;
+}
+
+.banner__desc {
+    color: var(--foreground-secondary);
+    font-size: .9rem;
+    margin-bottom: .5rem;
+}
+
+.banner__icons {
+    align-items: center;
+    color: var(--foreground-secondary);
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}

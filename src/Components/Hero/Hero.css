@@ -1,0 +1,128 @@
+.hero {
+    background-color: var(--background-primary);
+    margin: 5.5rem auto 3rem auto;
+    max-width: 1350px;
+    padding: 1.5rem;
+}
+
+.hero__featured {
+    display: grid;
+    grid-template-areas:
+    'first second'
+    'last second';
+    gap: 1.5rem;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 240px 240px;
+}
+
+.hero__featured-title {
+    border-bottom: 2px solid var(--overlay-scondary);
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.hero__card-first {
+    grid-area: first;
+}
+
+.hero__card-second {
+    grid-area: second;
+}
+
+.hero__card-last {
+    grid-area: last;
+}
+
+.hero__card-img {
+    filter: brightness(.8);
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    transition: all .3s ease-in-out;
+    width: 100%;
+}
+
+.hero__card:hover .hero__card-img {
+    filter: brightness(1);
+}
+
+.hero__card {
+    cursor: pointer;
+    position: relative;
+}
+
+.hero__card-content {
+    align-items: flex-start;
+    bottom: .5rem;
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+    left: 1rem;
+    position: absolute;
+}
+
+.hero__card-flex {
+    align-items: center;
+    display: flex;
+    gap: .5rem;
+}
+
+.hero__card-title {
+    font-size: 2rem;
+}
+
+.hero__card-title--small {
+    font-size: 1rem;
+}
+
+.hero__card-desc {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.hero__card-price {
+    font-weight: 600;
+    font-size: 4rem;
+}
+
+.hero__card-price--small {
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+@media (max-width: 1350px) {
+    .hero {
+        margin-inline: 1.5rem;
+    }
+}
+
+@media (max-width: 1050px) {
+
+    .hero__card-title--small {
+            font-size: 2rem;
+    }
+
+    .hero__card-price--small {
+        font-size: 4rem;
+    }
+
+    .hero__featured {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 650px) {
+    .hero {
+        padding: 1rem;
+    }
+
+    .hero__card-price, .hero__card-price--small {
+        font-size: 1.2rem;
+    }
+
+    .hero__card-title, .hero__card-title--small {
+        font-size: 1.2rem;
+    }
+}
