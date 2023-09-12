@@ -66,8 +66,55 @@
     outline: none;
 }
 
+.nav__icon {
+    display: none;
+}
+
+.nav__list-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style: none;
+    padding-block: 1.5rem;  
+}
+
+.nav__menu-mobile {
+    display: none;
+}
+
+.nav__form-mobile {
+    align-items: center;
+    background: var(--overlay-secondary, rgba(208, 220, 245, 0.08)); 
+    border-radius: .5rem;
+    color: var(--foreground-tertiary);
+    display: flex;
+    gap: .5rem;
+    padding: .5rem .75rem;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
 @media (max-width: 1350px) {
-    .nav__container {
+    .nav {
         padding-inline: 1.5rem;
+    }
+}
+
+
+@media (max-width: 850px) {
+    .nav__icon {
+        display: unset;
+    }
+
+    .nav__list {
+        display: none;
+    }
+
+    .nav__form {
+        display: none;
+    }
+
+    .nav__menu-mobile {
+        display: unset;
     }
 }
