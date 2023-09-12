@@ -36,7 +36,7 @@ function Search() {
                     </div>
                     <div className="result__right">
                         <h4 className="result__price">${result.cheapest}</h4>
-                        <button className="btn" onClick={() => navigate(`/game/${result.gameID}`)}>Compare Prices</button>
+                        <button className="result__btn btn btn--small" onClick={() => navigate(`/game/${result.gameID}`)}>Compare Prices</button>
                     </div>
                 </div>
             ))}
