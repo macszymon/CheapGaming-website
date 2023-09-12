@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/CheapGaming-website/static/css/main.b8adb59a.css",
+    "main.js": "/CheapGaming-website/static/js/main.5b7601af.js",
+    "static/js/787.fa3b4bb4.chunk.js": "/CheapGaming-website/static/js/787.fa3b4bb4.chunk.js",
+    "static/media/MassEffectCover.png": "/CheapGaming-website/static/media/MassEffectCover.d14576e45e8dc33faf58.png",
+    "static/media/RedDeadRedemption2Cover.jpg": "/CheapGaming-website/static/media/RedDeadRedemption2Cover.275cde78f500b5d56d7d.jpg",
+    "static/media/BaldursGate3Cover.png": "/CheapGaming-website/static/media/BaldursGate3Cover.a40a826f438e7ef4484e.png",
+    "static/media/Logo.svg": "/CheapGaming-website/static/media/Logo.44c0fe59203a1db87c9ca545cd12cfdc.svg",
+    "index.html": "/CheapGaming-website/index.html",
+    "main.b8adb59a.css.map": "/CheapGaming-website/static/css/main.b8adb59a.css.map",
+    "main.5b7601af.js.map": "/CheapGaming-website/static/js/main.5b7601af.js.map",
+    "787.fa3b4bb4.chunk.js.map": "/CheapGaming-website/static/js/787.fa3b4bb4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b8adb59a.css",
+    "static/js/main.5b7601af.js"
+  ]
+}
