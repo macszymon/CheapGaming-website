@@ -1,6 +1,8 @@
-import Hero from '../../Components/Hero/Hero';
-import Banner from '../../Components/Banner/Banner';
-import DealsSection from '../../Components/DealsSection/DealsSection';
+import { useEffect } from "react";
+
+import Hero from "../../Components/Hero/Hero";
+import Banner from "../../Components/Banner/Banner";
+import DealsSection from "../../Components/DealsSection/DealsSection";
 
 function Home() {
   useEffect(() => {
