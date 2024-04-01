@@ -17,6 +17,10 @@ function Game() {
   }
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
     fetchGame();
   }, [game]);
 

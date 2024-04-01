@@ -10,11 +10,11 @@ function Deals() {
   const [stores, setStores] = useState([]);
 
   const { type } = useParams();
-
+  
   async function fetchData() {
     const resStores = await fetch('https://www.cheapshark.com/api/1.0/stores');
     const dataStores = await resStores.json();
-
+    
     const resNew = await fetch(
       'https://www.cheapshark.com/api/1.0/deals?sortBy=Recent'
     );
@@ -24,19 +24,20 @@ function Deals() {
       'https://www.cheapshark.com/api/1.0/deals?sortBy=Savings'
     );
     const dataBest = await resBest.json();
-
+    
     const resTop = await fetch(
       'https://www.cheapshark.com/api/1.0/deals?onSale=1&storeID=1&sortBy=Metacritic'
     );
     const dataTop = await resTop.json();
-
+    
     setBestDeals(dataBest);
     setStores(dataStores);
     setNewDeals(dataNew);
     setTopGames(dataTop);
   }
-
+  
   useEffect(() => {
+    window.scrollTo(0, 0);
     fetchData();
   }, []);
 

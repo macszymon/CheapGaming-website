@@ -17,6 +17,10 @@ function Search() {
   }
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
     fetchResults()
     console.log(input);
   }, [input])
